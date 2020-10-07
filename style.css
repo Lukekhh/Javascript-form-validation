@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --myfont:sans-serif;
+    --lg-lightcolor:linear-gradient(to left, rgba(14, 200, 166, 0.6), rgba(230, 178, 10, 0.6));
+    --lg-color:linear-gradient(to left, #f3f5f5, #cef5f8);
+}
+
+body{
+    font-family: var(--myfont);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+
+}
+
+.container{
+    background: rgb(241, 241, 226);
+    overflow: hidden;
+    width: calc(100vw - 60vw);
+    max-width: 100%;
+}
+
+.header{
+    background: #fbfbfb;
+    padding: 10px 0;
+}
+.header h2{
+    color:#222;
+    font-family: sans-serif;
+    font-size:28px;
+    text-transform:uppercase;
+    text-align:center;
+}
+.form{
+    padding: 20px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    position: relative !important;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+
+}
+.form-control input{
+    width:100%;
+    border: 2px solid #f0f0f0;
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+   
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-control.success input{
+    border-color: #47dd2d;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control #fa-icon{
+    position: absolute;
+    right: 12px;
+    top: 48px;
+    visibility: hidden;
+    
+}
+.form-control small{
+    position: absolute;
+    color: #e74c3c;
+    bottom: 1;
+    font-size: 10px;
+    left: 0;
+    visibility: hidden;
+    
+}
+
+.form-control.error small{
+    visibility: visible;
+
+    
+}
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #d11a1a;
+    visibility: visible;    
+}
+.form .btn{
+    background: #2ecc71;
+    border: none;
+    outline: none;             
+    color: rgb(231, 229, 204);
+    display: block;
+    font-family: var(--myfont);
+    padding: 15px 0;
+    margin-top: 40px;
+    width: 100%;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+.form .btn:hover{
+    background: rgb(11, 172, 33);
+    cursor: pointer;
+}
